@@ -9,7 +9,7 @@ end
 
 def run_guessing_game
   answer = computer_number
-  guess = user_input
+  guess = user_input.to_i
   if guess == "exit"
     puts "Goodbye!"
   elsif guess != answer
