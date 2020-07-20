@@ -2,6 +2,7 @@
 
 def run_guessing_game
   guess = gets.chomp
+  computer = rand(1...7)
   if guess == "exit"
     puts "Goodbye!"
   elsif guess != answer
