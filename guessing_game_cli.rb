@@ -4,9 +4,9 @@ def computer_number
 end
 
 def user_input
-  puts "Please make a guess between: 1-6, or 'exit' to exit"
   gets.chomp
 end
+
 def run_guessing_game
   answer = computer_number
   guess = user_input
