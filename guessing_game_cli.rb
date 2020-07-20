@@ -1,13 +1,20 @@
 # Code your solution here!
+def computer_number
+  rand(5)+1
+end
+
+def user_input
+  gets.chomp
+end
 
 def run_guessing_game
-  guess = gets.chomp
-  computer = rand(1...7)
+  answer = computer_number
+  guess = user_input
   if guess == "exit"
     puts "Goodbye!"
-  elsif guess != computer
-    puts "Sorry! The computer guessed #{computer}."
-  elsif guess == computer
+  elsif guess != answer
+    puts "Sorry! The computer guess #{answer}."
+  elsif guess == answer
     puts "You guessed the correct number!"
   end
   
